@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destinations - Africa Safari Discovery</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar solid" role="navigation" aria-label="Main navigation">
+    <div class="container nav-container">
+      <a href="index.html" class="logo solid">Africa Safari Discovery</a>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="destinations.html" class="nav-link nav-parent solid">Destinations</a>
+          <div class="dropdown">
+            <a href="destination-kenya.html"><i class="fas fa-map-marker-alt"></i> Kenya</a>
+            <a href="destination-tanzania.html"><i class="fas fa-map-marker-alt"></i> Tanzania</a>
+            <a href="destination-uganda.html"><i class="fas fa-map-marker-alt"></i> Uganda</a>
+            <a href="destination-rwanda.html"><i class="fas fa-map-marker-alt"></i> Rwanda</a>
+            <a href="destination-dubai.html"><i class="fas fa-map-marker-alt"></i> Dubai</a>
+          </div>
+        </li>
+        <li><a href="tours.html" class="nav-link solid">Tours</a></li>
+        <li><a href="deals.html" class="nav-link solid">Deals</a></li>
+        <li><a href="about.html" class="nav-link solid">About</a></li>
+        <li><a href="blog.html" class="nav-link solid">Blog</a></li>
+        <li><a href="contact.html" class="nav-link solid">Contact</a></li>
+        <li>
+          <select class="language-selector" style="border-color: var(--color-dark); color: var(--color-dark);">
+            <option>EN</option>
+            <option>FR</option>
+            <option>DE</option>
+          </select>
+        </li>
+        <li><a href="tours.html" class="btn btn-accent">Plan My Safari</a></li>
+      </ul>
+      <div class="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <div class="container">
+    <nav aria-label="breadcrumb" class="breadcrumb">
+      <ol class="breadcrumb" style="display: flex; gap: 0.5rem; padding: 1rem 0;">
+        <li><a href="index.html">Home</a></li>
+        <li class="active">Destinations</li>
+      </ol>
+    </nav>
+  </div>
+
+  <!-- Page Header -->
+  <section class="section" style="background: var(--color-surface);">
+    <div class="container">
+      <h1>Explore Our Destinations</h1>
+      <p>Discover the magic of East Africa with our carefully selected safari destinations</p>
+    </div>
+  </section>
+
+  <!-- Destinations Grid -->
+  <section class="section">
+    <div class="container">
+      <div class="tour-grid">
+        <a href="destination-kenya.html" class="tour-card" style="text-decoration: none; color: inherit;">
+          <div class="tour-image">
+            <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=400&q=80" alt="Kenya Safari" loading="lazy">
+          </div>
+          <div class="tour-content">
+            <h3 class="tour-title">Kenya</h3>
+            <p>Maasai Mara, Amboseli, Tsavo, and Lake Nakuru. The birthplace of safari.</p>
+            <p><strong>12 tours available</strong></p>
+            <button class="btn btn-outline">Explore Kenya</button>
+          </div>
+        </a>
+        <a href="destination-tanzania.html" class="tour-card" style="text-decoration: none; color: inherit;">
+          <div class="tour-image">
+            <img src="https://images.unsplash.com/photo-1612196808214-b8e1d6145a8c?w=400&q=80" alt="Tanzania Safari" loading="lazy">
+          </div>
+          <div class="tour-content">
+            <h3 class="tour-title">Tanzania</h3>
+            <p>Serengeti, Ngorongoro Crater, Kilimanjaro, and Zanzibar await you.</p>
+            <p><strong>8 tours available</strong></p>
+            <button class="btn btn-outline">Explore Tanzania</button>
+          </div>
+        </a>
+        <a href="destination-uganda.html" class="tour-card" style="text-decoration: none; color: inherit;">
+          <div class="tour-image">
+            <img src="https://images.unsplash.com/photo-1541447271487-09612ad43e8e?w=400&q=80" alt="Uganda Safari" loading="lazy">
+          </div>
+          <div class="tour-content">
+            <h3 class="tour-title">Uganda</h3>
+            <p>The Pearl of Africa with gorillas, chimps, and the mighty Nile.</p>
+            <p><strong>6 tours available</strong></p>
+            <button class="btn btn-outline">Explore Uganda</button>
+          </div>
+        </a>
+        <a href="destination-rwanda.html" class="tour-card" style="text-decoration: none; color: inherit;">
+          <div class="tour-image">
+            <img src="https://images.unsplash.com/photo-1583394840520-4a0f16e9c1c3?w=400&q=80" alt="Rwanda Safari" loading="lazy">
+          </div>
+          <div class="tour-content">
+            <h3 class="tour-title">Rwanda</h3>
+            <p>Land of a Thousand Hills with mountain gorillas and stunning lakes.</p>
+            <p><strong>4 tours available</strong></p>
+            <button class="btn btn-outline">Explore Rwanda</button>
+          </div>
+        </a>
+        <a href="destination-dubai.html" class="tour-card" style="text-decoration: none; color: inherit;">
+          <div class="tour-image">
+            <img src="https://images.unsplash.com/photo-1512453979903-3c5d25a8a369?w=400&q=80" alt="Dubai" loading="lazy">
+          </div>
+          <div class="tour-content">
+            <h3 class="tour-title">Dubai</h3>
+            <p>Ultra-modern city combined with desert adventures and luxury shopping.</p>
+            <p><strong>3 tours available</strong></p>
+            <button class="btn btn-outline">Explore Dubai</button>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why East Africa -->
+  <section class="section" style="background: var(--color-primary); color: white;">
+    <div class="container">
+      <h2 style="text-align: center; margin-bottom: 2rem;">Why East Africa?</h2>
+      <p style="font-size: 1.1rem; max-width: 800px; margin: 0 auto; text-align: center;">
+        East Africa offers the most diverse safari experiences on the planet. From the Great Migration in Kenya and Tanzania,
+        to endangered mountain gorillas in Uganda and Rwanda, this region delivers unparalleled wildlife encounters.
+        The Great Rift Valley, snow-capped Kilimanjaro, and pristine Indian Ocean beaches make East Africa a complete
+        destination for adventure seekers and luxury travelers alike.
+      </p>
+    </div>
+  </section>
+
+  <!-- Redesigned Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="index.html" class="logo solid">Africa Safari Discovery</a>
+          <p>Premium safari tours across East Africa with certified local expertise since 2010.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="tours.html">Tours</a>
+            <a href="deals.html">Deals</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Destinations</h3>
+          <div class="footer-links">
+            <a href="destination-kenya.html">Kenya Safaris</a>
+            <a href="destination-tanzania.html">Tanzania Safaris</a>
+            <a href="destination-uganda.html">Uganda Safaris</a>
+            <a href="destination-rwanda.html">Rwanda Safaris</a>
+            <a href="destination-dubai.html">Dubai Tours</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Contact Us</h3>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Nairobi, Kenya</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+254 712 345 678</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>info@africasafaridiscovery.com</span>
+          </div>
+        </div>
+      </div>
+      <div class="trust-badge-row">
+        <img src="https://via.placeholder.com/80x30?text=KATO" alt="KATO" class="trust-badge-small">
+        <img src="https://via.placeholder.com/80x30?text=AMREF" alt="AMREF" class="trust-badge-small">
+        <img src="https://via.placeholder.com/80x30?text=TripAdvisor" alt="TripAdvisor" class="trust-badge-small">
+        <img src="https://via.placeholder.com/80x30?text=Visa" alt="Visa" class="trust-badge-small">
+        <img src="https://via.placeholder.com/80x30?text=Mastercard" alt="Mastercard" class="trust-badge-small">
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-left">
+          <span>© 2025 Africa Safari Discovery. All rights reserved.</span>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+        <div>Designed with <span style="color: var(--color-accent);">♥</span> for Safari</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

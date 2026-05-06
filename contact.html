@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Africa Safari Discovery</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar solid" role="navigation" aria-label="Main navigation">
+    <div class="container nav-container">
+      <a href="index.html" class="logo solid">Africa Safari Discovery</a>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="destinations.html" class="nav-link nav-parent solid">Destinations</a>
+          <div class="dropdown">
+            <a href="destination-kenya.html"><i class="fas fa-map-marker-alt"></i> Kenya</a>
+            <a href="destination-tanzania.html"><i class="fas fa-map-marker-alt"></i> Tanzania</a>
+            <a href="destination-uganda.html"><i class="fas fa-map-marker-alt"></i> Uganda</a>
+            <a href="destination-rwanda.html"><i class="fas fa-map-marker-alt"></i> Rwanda</a>
+            <a href="destination-dubai.html"><i class="fas fa-map-marker-alt"></i> Dubai</a>
+          </div>
+        </li>
+        <li><a href="tours.html" class="nav-link solid">Tours</a></li>
+        <li><a href="deals.html" class="nav-link solid">Deals</a></li>
+        <li><a href="about.html" class="nav-link solid">About</a></li>
+        <li><a href="blog.html" class="nav-link solid">Blog</a></li>
+        <li><a href="contact.html" class="nav-link solid">Contact</a></li>
+        <li>
+          <select class="language-selector" style="border-color: var(--color-dark); color: var(--color-dark);">
+            <option>EN</option>
+            <option>FR</option>
+            <option>DE</option>
+          </select>
+        </li>
+        <li><a href="tours.html" class="btn btn-accent">Plan My Safari</a></li>
+      </ul>
+      <div class="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <div class="container">
+    <nav aria-label="breadcrumb" class="breadcrumb">
+      <ol class="breadcrumb" style="display: flex; gap: 0.5rem; padding: 1rem 0;">
+        <li><a href="index.html">Home</a></li>
+        <li class="active">Contact</li>
+      </ol>
+    </nav>
+  </div>
+
+  <!-- Page Header -->
+  <section class="section" style="background: var(--color-surface);">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>We're here to help plan your perfect African safari adventure</p>
+    </div>
+  </section>
+
+  <!-- Contact Layout -->
+  <section class="section">
+    <div class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
+      <!-- Contact Form -->
+      <div>
+        <h2>Send Us a Message</h2>
+        <form style="margin-top: 1rem;">
+          <div style="margin-bottom: 1rem;">
+            <label for="name"><strong>Name *</strong></label>
+            <input type="text" id="name" name="name" required style="width: 100%; padding: 0.75rem; margin-top: 0.25rem;">
+          </div>
+          <div style="margin-bottom: 1rem;">
+            <label for="email"><strong>Email *</strong></label>
+            <input type="email" id="email" name="email" required style="width: 100%; padding: 0.75rem; margin-top: 0.25rem;">
+          </div>
+          <div style="margin-bottom: 1rem;">
+            <label for="phone"><strong>Phone</strong></label>
+            <input type="tel" id="phone" name="phone" style="width: 100%; padding: 0.75rem; margin-top: 0.25rem;">
+          </div>
+          <div style="margin-bottom: 1rem;">
+            <label for="destination"><strong>Destination Interest</strong></label>
+            <select id="destination" name="destination" style="width: 100%; padding: 0.75rem; margin-top: 0.25rem;">
+              <option>Select Destination</option>
+              <option>Kenya</option>
+              <option>Tanzania</option>
+              <option>Uganda</option>
+              <option>Rwanda</option>
+              <option>Dubai</option>
+            </select>
+          </div>
+          <div style="margin-bottom: 1rem;">
+            <label for="month"><strong>Travel Month</strong></label>
+            <select id="month" name="month" style="width: 100%; padding: 0.75rem; margin-top: 0.25rem;">
+              <option>Any Month</option>
+              <option>January</option>
+              <option>February</option>
+              <option>March</option>
+              <option>April</option>
+              <option>May</option>
+              <option>June</option>
+              <option>July</option>
+              <option>August</option>
+              <option>September</option>
+              <option>October</option>
+              <option>November</option>
+              <option>December</option>
+            </select>
+          </div>
+          <div style="margin-bottom: 1rem;">
+            <label for="message"><strong>Message *</strong></label>
+            <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 0.75rem; margin-top: 0.25rem;"></textarea>
+          </div>
+          <button type="submit" class="btn btn-accent">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Contact Details -->
+      <div>
+        <h2>Contact Information</h2>
+        <div style="margin: 2rem 0;">
+          <h3 style="color: var(--color-primary); margin-bottom: 1rem;">Nairobi Office</h3>
+          <p style="margin: 0.5rem 0;"><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> Westlands, Nairobi, Kenya</p>
+          <p style="margin: 0.5rem 0;"><i class="fas fa-phone"></i> <strong>Phone:</strong> +254 712 345 678</p>
+          <p style="margin: 0.5rem 0;"><i class="fab fa-whatsapp"></i> <strong>WhatsApp:</strong> +254 712 345 678</p>
+          <p style="margin: 0.5rem 0;"><i class="fas fa-envelope"></i> <strong>Email:</strong> info@africasafaridiscovery.com</p>
+          <p style="margin: 0.5rem 0;"><i class="fab fa-skype"></i> <strong>Skype:</strong> africasafaridiscovery</p>
+        </div>
+
+        <div style="margin: 2rem 0;">
+          <h3 style="color: var(--color-primary); margin-bottom: 1rem;">International Contacts</h3>
+          <p style="margin: 0.5rem 0;"><strong>USA:</strong> usa@africasafaridiscovery.com</p>
+          <p style="margin: 0.5rem 0;"><strong>Canada:</strong> canada@africasafaridiscovery.com</p>
+          <p style="margin: 0.5rem 0;"><strong>Germany:</strong> germany@africasafaridiscovery.com</p>
+          <p style="margin: 0.5rem 0;"><strong>France:</strong> france@africasafaridiscovery.com</p>
+        </div>
+
+        <div style="margin: 2rem 0;">
+          <h3 style="color: var(--color-primary); margin-bottom: 1rem;">Office Hours</h3>
+          <p style="margin: 0.5rem 0;">Monday - Friday: 8:00 AM - 6:00 PM</p>
+          <p style="margin: 0.5rem 0;">Saturday: 9:00 AM - 1:00 PM</p>
+          <p style="margin: 0.5rem 0;">Sunday: Closed</p>
+        </div>
+
+        <div style="margin: 2rem 0;">
+          <h3 style="color: var(--color-primary); margin-bottom: 1rem;">Language Support</h3>
+          <p>Our team speaks <strong>English, French, German,</strong> and <strong>Swahili</strong>. Contact us in your preferred language!</p>
+        </div>
+
+        <!-- Map -->
+        <div style="background: #eee; height: 200px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+          <p><i class="fas fa-map"></i> Google Maps Embed Placeholder</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Redesigned Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="index.html" class="logo solid">Africa Safari Discovery</a>
+          <p>Premium safari tours across East Africa with certified local expertise since 2010.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="tours.html">Tours</a>
+            <a href="deals.html">Deals</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Destinations</h3>
+          <div class="footer-links">
+            <a href="destination-kenya.html">Kenya Safaris</a>
+            <a href="destination-tanzania.html">Tanzania Safaris</a>
+            <a href="destination-uganda.html">Uganda Safaris</a>
+            <a href="destination-rwanda.html">Rwanda Safaris</a>
+            <a href="destination-dubai.html">Dubai Tours</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Contact Us</h3>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Nairobi, Kenya</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+254 712 345 678</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>info@africasafaridiscovery.com</span>
+          </div>
+        </div>
+      </div>
+      <div class="trust-badge-row">
+        <img src="https://via.placeholder.com/80x30?text=KATO" alt="KATO" class="trust-badge-small">
+        <img src="https://via.placeholder.com/80x30?text=AMREF" alt="AMREF" class="trust-badge-small">
+        <img src="https://via.placeholder.com/80x30?text=TripAdvisor" alt="TripAdvisor" class="trust-badge-small">
+        <img src="https://via.placeholder.com/80x30?text=Visa" alt="Visa" class="trust-badge-small">
+        <img src="https://via.placeholder.com/80x30?text=Mastercard" alt="Mastercard" class="trust-badge-small">
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-left">
+          <span>© 2025 Africa Safari Discovery. All rights reserved.</span>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+        <div>Designed with <span style="color: var(--color-accent);">♥</span> for Safari</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

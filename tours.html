@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Safari Tours - Africa Safari Discovery</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar solid" role="navigation" aria-label="Main navigation">
+    <div class="container nav-container">
+      <a href="index.html" class="logo solid">Africa Safari Discovery</a>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="destinations.html" class="nav-link nav-parent solid">Destinations</a>
+          <div class="dropdown">
+            <a href="destination-kenya.html"><i class="fas fa-map-marker-alt"></i> Kenya</a>
+            <a href="destination-tanzania.html"><i class="fas fa-map-marker-alt"></i> Tanzania</a>
+            <a href="destination-uganda.html"><i class="fas fa-map-marker-alt"></i> Uganda</a>
+            <a href="destination-rwanda.html"><i class="fas fa-map-marker-alt"></i> Rwanda</a>
+            <a href="destination-dubai.html"><i class="fas fa-map-marker-alt"></i> Dubai</a>
+          </div>
+        </li>
+        <li><a href="tours.html" class="nav-link solid">Tours</a></li>
+        <li><a href="deals.html" class="nav-link solid">Deals</a></li>
+        <li><a href="about.html" class="nav-link solid">About</a></li>
+        <li><a href="blog.html" class="nav-link solid">Blog</a></li>
+        <li><a href="contact.html" class="nav-link solid">Contact</a></li>
+        <li>
+          <select class="language-selector" style="border-color: var(--color-dark); color: var(--color-dark);">
+            <option>EN</option>
+            <option>FR</option>
+            <option>DE</option>
+          </select>
+        </li>
+        <li><a href="tours.html" class="btn btn-accent">Plan My Safari</a></li>
+      </ul>
+      <div class="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <div class="container">
+    <nav aria-label="breadcrumb" class="breadcrumb">
+      <ol class="breadcrumb" style="display: flex; gap: 0.5rem; padding: 1rem 0;">
+        <li><a href="index.html">Home</a></li>
+        <li class="active">Tours</li>
+      </ol>
+    </nav>
+  </div>
+
+  <!-- Page Header -->
+  <section class="section">
+    <div class="container">
+      <h1>All Safari Tours</h1>
+      <p>Discover our carefully curated safari experiences across East Africa</p>
+    </div>
+  </section>
+
+  <!-- Tours Layout -->
+  <section class="section">
+    <div class="container" style="display: grid; grid-template-columns: 250px 1fr; gap: 2rem;">
+      <!-- Sidebar Filters -->
+      <aside>
+        <h3 style="margin-bottom: 1rem;">Filter Tours</h3>
+        <form>
+          <div style="margin-bottom: 1rem;">
+            <label><strong>Tour Type</strong></label>
+            <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-top: 0.5rem;">
+              <label><input type="checkbox"> Game Drive</label>
+              <label><input type="checkbox"> Hiking</label>
+              <label><input type="checkbox"> Cultural</label>
+              <label><input type="checkbox"> Luxury</label>
+              <label><input type="checkbox"> Family</label>
+              <label><input type="checkbox"> Honeymoon</label>
+            </div>
+          </div>
+          <div style="margin-bottom: 1rem;">
+            <label><strong>Destination</strong></label>
+            <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-top: 0.5rem;">
+              <label><input type="checkbox"> Kenya</label>
+              <label><input type="checkbox"> Tanzania</label>
+              <label><input type="checkbox"> Uganda</label>
+              <label><input type="checkbox"> Rwanda</label>
+              <label><input type="checkbox"> Dubai</label>
+            </div>
+          </div>
+          <div style="margin-bottom: 1rem;">
+            <label><strong>Price Range: $0 - $10,000+</strong></label>
+            <input type="range" min="0" max="10000" style="width: 100%;">
+          </div>
+          <div style="margin-bottom: 1rem;">
+            <label><strong>Travel Month</strong></label>
+            <select style="width: 100%; padding: 0.5rem;">
+              <option>Any Month</option>
+              <option>January</option>
+              <option>February</option>
+              <option>March</option>
+              <option>April</option>
+              <option>May</option>
+              <option>June</option>
+              <option>July</option>
+              <option>August</option>
+              <option>September</option>
+              <option>October</option>
+              <option>November</option>
+              <option>December</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">Apply Filters</button>
+          <a href="tours.html" style="display: block; text-align: center; margin-top: 0.5rem;">Reset</a>
+        </form>
+      </aside>
+
+      <!-- Main Content -->
+      <main>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 1rem;">
+          <p>Showing 8 tours</p>
+          <div>
+            Sort by: 
+            <select>
+              <option>Price Low–High</option>
+              <option>Price High–Low</option>
+              <option>Duration</option>
+              <option>Most Popular</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="tour-grid">
+          <div class="tour-card">
+            <div class="tour-image">
+              <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=400&q=80" alt="Maasai Mara Safari" loading="lazy">
+            </div>
+            <div class="tour-content">
+              <h3 class="tour-title">Maasai Mara Great Migration Safari</h3>
+              <div class="tour-meta">
+                <span><i class="fas fa-map-marker-alt"></i> Kenya</span>
+                <span><i class="fas fa-clock"></i> 7 days</span>
+              </div>
+              <p>Experience the great wildebeest migration and encounter the Big Five with hot air balloon option.</p>
+              <div class="tour-price">From $1,850</div>
+              <div style="color: var(--color-accent); margin: 0.5rem 0;">★★★★★</div>
+              <a href="tours.html" class="btn btn-outline" style="margin-top: 1rem;">View Details</a>
+            </div>
+          </div>
+          <div class="tour-card">
+            <div class="tour-image">
+              <img src="https://images.unsplash.com/photo-1541447271487-09612ad43e8e?w=400&q=80" alt="Gorilla Trekking" loading="lazy">
+            </div>
+            <div class="tour-content">
+              <h3 class="tour-title">Gorilla Trekking Adventure</h3>
+              <div class="tour-meta">
+                <span><i class="fas fa-map-marker-alt"></i> Uganda</span>
+                <span><i class="fas fa-clock"></i> 5 days</span>
+              </div>
+              <p>Track endangered mountain gorillas in Bwindi Forest with chimpanzee tracking included.</p>
+              <div class="tour-price">From $2,400</div>
+              <div style="color: var(--color-accent); margin: 0.5rem 0;">★★★★★</div>
+              <a href="tours.html" class="btn btn-outline" style="margin-top: 1rem;">View Details</a>
+            </div>
+          </div>
+          <div class="tour-card">
+            <div class="tour-image">
+              <img src="https://images.unsplash.com/photo-1612196808214-b8e1d6145a8c?w=400&q=80" alt="Kilimanjaro" loading="lazy">
+            </div>
+            <div class="tour-content">
+              <h3 class="tour-title">Kilimanjaro Summit Trek (Lemosho Route)</h3>
+              <div class="tour-meta">
+                <span><i class="fas fa-map-marker-alt"></i> Tanzania</span>
+                <span><i class="fas fa-clock"></i> 8 days</span>
+              </div>
+              <p>Climb Africa's roof via the scenic Lemosho route traversing rainforest to arctic summit.</p>
+              <div class="tour-price">From $2,100</div>
+              <div style="color: var(--color-accent); margin: 0.5rem 0;">★★★★★</div>
+              <a href="tours.html" class="btn btn-outline" style="margin-top: 1rem;">View Details</a>
+            </div>
+          </div>
+          <div class="tour-card">
+            <div class="tour-image">
+              <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=400&q=80" alt="Combined Safari" loading="lazy">
+            </div>
+            <div class="tour-content">
+              <h3 class="tour-title">Kenya & Tanzania Combined Safari</h3>
+              <div class="tour-meta">
+                <span><i class="fas fa-map-marker-alt"></i> Kenya + Tanzania</span>
+                <span><i class="fas fa-clock"></i> 12 days</span>
+              </div>
+              <p>The ultimate East Africa experience covering Maasai Mara, Serengeti, Ngorongoro, and Amboseli.</p>
+              <div class="tour-price">From $3,200</div>
+              <div style="color: var(--color-accent); margin: 0.5rem 0;">★★★★★</div>
+              <a href="tours.html" class="btn btn-outline" style="margin-top: 1rem;">View Details</a>
+            </div>
+          </div>
+          <div class="tour-card">
+            <div class="tour-image">
+              <img src="https://images.unsplash.com/photo-1541447271487-09612ad43e8e?w=400&q=80" alt="Rwanda" loading="lazy">
+            </div>
+            <div class="tour-content">
+              <h3 class="tour-title">Rwanda Gorillas & Volcanoes</h3>
+              <div class="tour-meta">
+                <span><i class="fas fa-map-marker-alt"></i> Rwanda</span>
+                <span><i class="fas fa-clock"></i> 6 days</span>
+              </div>
+              <p>Trek golden monkeys and encounter mountain gorillas in the stunning Volcanoes National Park.</p>
+              <div class="tour-price">From $2,800</div>
+              <div style="color: var(--color-accent); margin: 0.5rem 0;">★★★★★</div>
+              <a href="tours.html" class="btn btn-outline" style="margin-top: 1rem;">View Details</a>
+            </div>
+          </div>
+          <div class="tour-card">
+            <div class="tour-image">
+              <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=400&q=80" alt="Luxury Safari" loading="lazy">
+            </div>
+            <div class="tour-content">
+              <h3 class="tour-title">Luxury Amboseli & Tsavo Safari</h3>
+              <div class="tour-meta">
+                <span><i class="fas fa-map-marker-alt"></i> Kenya</span>
+                <span><i class="fas fa-clock"></i> 9 days</span>
+              </div>
+              <p>Premium lodges with elephant herds and Kilimanjaro views in Amboseli and Tsavo.</p>
+              <div class="tour-price">From $4,500</div>
+              <div style="color: var(--color-accent); margin: 0.5rem 0;">★★★★★</div>
+              <a href="tours.html" class="btn btn-outline" style="margin-top: 1rem;">View Details</a>
+            </div>
+          </div>
+          <div class="tour-card">
+            <div class="tour-image">
+              <img src="https://images.unsplash.com/photo-1612196808214-b8e1d6145a8c?w=400&q=80" alt="Serengeti" loading="lazy">
+            </div>
+            <div class="tour-content">
+              <h3 class="tour-title">Serengeti Migration Circuit</h3>
+              <div class="tour-meta">
+                <span><i class="fas fa-map-marker-alt"></i> Tanzania</span>
+                <span><i class="fas fa-clock"></i> 10 days</span>
+              </div>
+              <p>Witness calving season and dramatic river crossings with walking safaris included.</p>
+              <div class="tour-price">From $3,600</div>
+              <div style="color: var(--color-accent); margin: 0.5rem 0;">★★★★★</div>
+              <a href="tours.html" class="btn btn-outline" style="margin-top: 1rem;">View Details</a>
+            </div>
+          </div>
+          <div class="tour-card">
+            <div class="tour-image">
+              <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=400&q=80" alt="Family Safari" loading="lazy">
+            </div>
+            <div class="tour-content">
+              <h3 class="tour-title">Family Safari Adventure</h3>
+              <div class="tour-meta">
+                <span><i class="fas fa-map-marker-alt"></i> Kenya</span>
+                <span><i class="fas fa-clock"></i> 8 days</span>
+              </div>
+              <p>Kid-friendly lodges, game drives, and cultural village visits perfect for families.</p>
+              <div class="tour-price">From $1,950</div>
+              <div style="color: var(--color-accent); margin: 0.5rem 0;">★★★★★</div>
+              <a href="tours.html" class="btn btn-outline" style="margin-top: 1rem;">View Details</a>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+
+  <!-- Redesigned Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="index.html" class="logo solid">Africa Safari Discovery</a>
+          <p>Premium safari tours across East Africa with certified local expertise since 2010.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="tours.html">Tours</a>
+            <a href="deals.html">Deals</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Destinations</h3>
+          <div class="footer-links">
+            <a href="destination-kenya.html">Kenya Safaris</a>
+            <a href="destination-tanzania.html">Tanzania Safaris</a>
+            <a href="destination-uganda.html">Uganda Safaris</a>
+            <a href="destination-rwanda.html">Rwanda Safaris</a>
+            <a href="destination-dubai.html">Dubai Tours</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Contact Us</h3>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Nairobi, Kenya</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+254 712 345 678</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>info@africasafaridiscovery.com</span>
+          </div>
+        </div>
+      </div>
+      <div class="trust-badge-row">
+        <img src="https://via.placeholder.com/80x30?text=KATO" alt="KATO" class="trust-badge-small">
+        <img src="https://via.placeholder.com/80x30?text=AMREF" alt="AMREF" class="trust-badge-small">
+        <img src="https://via.placeholder.com/80x30?text=TripAdvisor" alt="TripAdvisor" class="trust-badge-small">
+        <img src="https://via.placeholder.com/80x30?text=Visa" alt="Visa" class="trust-badge-small">
+        <img src="https://via.placeholder.com/80x30?text=Mastercard" alt="Mastercard" class="trust-badge-small">
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-left">
+          <span>© 2025 Africa Safari Discovery. All rights reserved.</span>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+        <div>Designed with <span style="color: var(--color-accent);">♥</span> for Safari</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

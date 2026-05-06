@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Africa Safari Discovery</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar solid" role="navigation" aria-label="Main navigation">
+    <div class="container nav-container">
+      <a href="index.html" class="logo solid">Africa Safari Discovery</a>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="destinations.html" class="nav-link nav-parent solid">Destinations</a>
+          <div class="dropdown">
+            <a href="destination-kenya.html"><i class="fas fa-map-marker-alt"></i> Kenya</a>
+            <a href="destination-tanzania.html"><i class="fas fa-map-marker-alt"></i> Tanzania</a>
+            <a href="destination-uganda.html"><i class="fas fa-map-marker-alt"></i> Uganda</a>
+            <a href="destination-rwanda.html"><i class="fas fa-map-marker-alt"></i> Rwanda</a>
+            <a href="destination-dubai.html"><i class="fas fa-map-marker-alt"></i> Dubai</a>
+          </div>
+        </li>
+        <li><a href="tours.html" class="nav-link solid">Tours</a></li>
+        <li><a href="deals.html" class="nav-link solid">Deals</a></li>
+        <li><a href="about.html" class="nav-link solid">About</a></li>
+        <li><a href="blog.html" class="nav-link solid">Blog</a></li>
+        <li><a href="contact.html" class="nav-link solid">Contact</a></li>
+        <li>
+          <select class="language-selector" style="border-color: var(--color-dark); color: var(--color-dark);">
+            <option>EN</option>
+            <option>FR</option>
+            <option>DE</option>
+          </select>
+        </li>
+        <li><a href="tours.html" class="btn btn-accent">Plan My Safari</a></li>
+      </ul>
+      <div class="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <div class="container">
+    <nav aria-label="breadcrumb" class="breadcrumb">
+      <ol class="breadcrumb" style="display: flex; gap: 0.5rem; padding: 1rem 0;">
+        <li><a href="index.html">Home</a></li>
+        <li class="active">Blog</li>
+      </ol>
+    </nav>
+  </div>
+
+  <!-- Page Header -->
+  <section class="section" style="background: var(--color-surface);">
+    <div class="container">
+      <h1>Safari Blog</h1>
+      <p>Latest travel tips, wildlife insights, and safari stories from East Africa</p>
+    </div>
+  </section>
+
+  <!-- Blog Layout -->
+  <section class="section">
+    <div class="container" style="display: grid; grid-template-columns: 1fr 300px; gap: 3rem;">
+      <!-- Blog Posts -->
+      <div>
+        <div class="tour-grid">
+          <article class="tour-card" style="display: flex; flex-direction: column;">
+            <div class="tour-image">
+              <img src="https://images.unsplash.com/photo-1516426122078-c23e02736991?w=400&q=80" alt="Maasai Mara Guide" loading="lazy">
+            </div>
+            <div class="tour-content">
+              <span style="background: var(--color-light-green); color: var(--color-primary); padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.8rem; align-self: flex-start;">Travel Guide</span>
+              <h3 class="tour-title" style="margin-top: 0.5rem;">Best Time to Visit the Maasai Mara: A Month-by-Month Guide</h3>
+              <p style="color: #666;"><i class="fas fa-calendar"></i> March 15, 2025</p>
+              <p>Discover when to visit Kenya's most famous reserve for wildlife viewing, birding, and avoiding crowds...</p>
+              <a href="#" class="btn btn-outline" style="margin-top: 1rem;">Read More</a>
+            </div>
+          </article>
+          <article class="tour-card" style="display: flex; flex-direction: column;">
+            <div class="tour-image">
+              <img src="https://images.unsplash.com/photo-1541447271487-09612ad43e8e?w=400&q=80" alt="Gorilla Trekking" loading="lazy">
+            </div>
+            <div class="tour-content">
+              <span style="background: var(--color-light-green); color: var(--color-primary); padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.8rem; align-self: flex-start;">Comparison</span>
+              <h3 class="tour-title" style="margin-top: 0.5rem;">Gorilla Trekking in Uganda vs Rwanda: Which Should You Choose?</h3>
+              <p style="color: #666;"><i class="fas fa-calendar"></i> February 28, 2025</p>
+              <p>We compare the permits, terrain, accommodation options, and overall experience in both countries...</p>
+              <a href="#" class="btn btn-outline" style="margin-top: 1rem;">Read More</a>
+            </div>
+          </article>
+          <article class="tour-card" style="display: flex; flex-direction: column;">
+            <div class="tour-image">
+              <img src="https://images.unsplash.com/photo-1516426122078-c23e02736992?w=400&q=80" alt="Safari Packing" loading="lazy">
+            </div>
+            <div class="tour-content">
+              <span style="background: var(--color-light-green); color: var(--color-primary); padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.8rem; align-self: flex-start;">Tips</span>
+              <h3 class="tour-title" style="margin-top: 0.5rem;">What to Pack for an East Africa Safari</h3>
+              <p style="color: #666;"><i class="fas fa-calendar"></i> January 22, 2025</p>
+              <p>Your essential packing list from clothing to camera gear, plus what NOT to bring on safari...</p>
+              <a href="#" class="btn btn-outline" style="margin-top: 1rem;">Read More</a>
+            </div>
+          </article>
+          <article class="tour-card" style="display: flex; flex-direction: column;">
+            <div class="tour-image">
+              <img src="https://images.unsplash.com/photo-1612196808214-b8e1d6145a8c?w=400&q=80" alt="Kilimanjaro Routes" loading="lazy">
+            </div>
+            <div class="tour-content">
+              <span style="background: var(--color-light-green); color: var(--color-primary); padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.8rem; align-self: flex-start;">Adventure</span>
+              <h3 class="tour-title" style="margin-top: 0.5rem;">Kilimanjaro Climbing Routes Compared: Lemosho vs Machame</h3>
+              <p style="color: #666;"><i class="fas fa-calendar"></i> December 18, 2024</p>
+              <p>Detailed comparison of two popular routes including scenery, difficulty, success rates, and cost...</p>
+              <a href="#" class="btn btn-outline" style="margin-top: 1rem;">Read More</a>
+            </div>
+          </article>
+          <article class="tour-card" style="display: flex; flex-direction: column;">
+            <div class="tour-image">
+              <img src="https://images.unsplash.com/photo-1612196808214-b8e1d6145a8d?w=400&q=80" alt="Family Safari" loading="lazy">
+            </div>
+            <div class="tour-content">
+              <span style="background: var(--color-light-green); color: var(--color-primary); padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.8rem; align-self: flex-start;">Family</span>
+              <h3 class="tour-title" style="margin-top: 0.5rem;">Family Safari Tips: Traveling to Kenya with Kids</h3>
+              <p style="color: #666;"><i class="fas fa-calendar"></i> November 12, 2024</p>
+              <p>Essential advice for families including best lodges, safety tips, and kid-friendly activities...</p>
+              <a href="#" class="btn btn-outline" style="margin-top: 1rem;">Read More</a>
+            </div>
+          </article>
+          <article class="tour-card" style="display: flex; flex-direction: column;">
+            <div class="tour-image">
+              <img src="https://images.unsplash.com/photo-1612196808214-b8e1d6145a8e?w=400&q=80" alt="Wildlife Sightings" loading="lazy">
+            </div>
+            <div class="tour-content">
+              <span style="background: var(--color-light-green); color: var(--color-primary); padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.8rem; align-self: flex-start;">Wildlife</span>
+              <h3 class="tour-title" style="margin-top: 0.5rem;">Top 10 Wildlife Sightings on the Serengeti</h3>
+              <p style="color: #666;"><i class="fas fa-calendar"></i> October 30, 2024</p>
+              <p>From the great migration to predator action, here's what animals to look for in Tanzania's iconic park...</p>
+              <a href="#" class="btn btn-outline" style="margin-top: 1rem;">Read More</a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <aside>
+        <div style="background: var(--color-surface); padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem;">
+          <h3 style="margin-bottom: 1rem;">Categories</h3>
+          <ul style="list-style: none;">
+            <li style="margin-bottom: 0.5rem;"><a href="#" class="nav-link">Travel Guides (4)</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="#" class="nav-link">Wildlife Insights (3)</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="#" class="nav-link">Adventure (2)</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="#" class="nav-link">Tips & Advice (3)</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="#" class="nav-link">Family Travel (2)</a></li>
+          </ul>
+        </div>
+
+        <div style="background: var(--color-surface); padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem;">
+          <h3 style="margin-bottom: 1rem;">Recent Posts</h3>
+          <ul style="list-style: none; font-size: 0.9rem;">
+            <li style="margin-bottom: 0.75rem;"><a href="#">Best Time to Visit the Maasai Mara: A Month-by-Month Guide</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="#">Gorilla Trekking in Uganda vs Rwanda: Which Should You Choose?</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="#">What to Pack for an East Africa Safari</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="#">Kilimanjaro Climbing Routes Compared: Lemosho vs Machame</a></li>
+          </ul>
+        </div>
+
+        <div style="background: var(--color-accent); color: white; padding: 1.5rem; border-radius: 8px;">
+          <h3 style="margin-bottom: 1rem;">Newsletter Signup</h3>
+          <p>Get monthly safari tips and exclusive offers delivered to your inbox.</p>
+          <form>
+            <input type="email" placeholder="Your email" required style="width: 100%; padding: 0.5rem; margin: 0.5rem 0; border: none; border-radius: 4px;">
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Subscribe</button>
+          </form>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+    <!-- Redesigned Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="index.html" class="logo solid">Africa Safari Discovery</a>
+          <p>Premium safari tours across East Africa with certified local expertise since 2010.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="tours.html">Tours</a>
+            <a href="deals.html">Deals</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Destinations</h3>
+          <div class="footer-links">
+            <a href="destination-kenya.html">Kenya Safaris</a>
+            <a href="destination-tanzania.html">Tanzania Safaris</a>
+            <a href="destination-uganda.html">Uganda Safaris</a>
+            <a href="destination-rwanda.html">Rwanda Safaris</a>
+            <a href="destination-dubai.html">Dubai Tours</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Contact Us</h3>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Nairobi, Kenya</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+254 712 345 678</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>info@africasafaridiscovery.com</span>
+          </div>
+        </div>
+      </div>
+      <div class="trust-badge-row">
+        <img src="https://via.placeholder.com/80x30?text=KATO" alt="KATO" class="trust-badge-small">
+        <img src="https://via.placeholder.com/80x30?text=AMREF" alt="AMREF" class="trust-badge-small">
+        <img src="https://via.placeholder.com/80x30?text=TripAdvisor" alt="TripAdvisor" class="trust-badge-small">
+        <img src="https://via.placeholder.com/80x30?text=Visa" alt="Visa" class="trust-badge-small">
+        <img src="https://via.placeholder.com/80x30?text=Mastercard" alt="Mastercard" class="trust-badge-small">
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-left">
+          <span>© 2025 Africa Safari Discovery. All rights reserved.</span>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+        <div>Designed with <span style="color: var(--color-accent);">♥</span> for Safari</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
