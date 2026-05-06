@@ -11,10 +11,10 @@
 }
 
 /* Typography */
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Syne:wght@400;500;600;700;800&display=swap');
 
 :root {
-  --font-display: 'DM Serif Display', serif;
+  --font-display: 'Syne', sans-serif;
   --font-body: 'DM Sans', sans-serif;
 }
 
@@ -397,6 +397,217 @@ ul {
   .features-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* Destinations Section */
+.destinations-section {
+  background: var(--color-surface);
+}
+
+.destinations-row {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+  scroll-snap-type: x mandatory;
+}
+
+.destination-tile {
+  flex: 0 0 220px;
+  height: 280px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  scroll-snap-align: start;
+}
+
+.destination-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.destination-tile:hover img {
+  transform: scale(1.1);
+}
+
+.destination-tile-content {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, transparent 50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.5rem;
+  color: var(--color-white);
+}
+
+.destination-tile-content h3 {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.destination-tile-content p {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .destination-tile {
+    flex: 0 0 180px;
+    height: 240px;
+  }
+}
+
+@media (max-width: 480px) {
+  .destination-tile {
+    flex: 0 0 160px;
+    height: 220px;
+  }
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  background: var(--color-bg);
+}
+
+.testimonials-row {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+  scroll-snap-type: x mandatory;
+}
+
+.testimonial-card {
+  flex: 0 0 320px;
+  background: var(--color-white);
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  scroll-snap-align: start;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.testimonial-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  object-fit: cover;
+  border: 3px solid var(--color-accent);
+}
+
+.testimonial-stars {
+  color: var(--color-accent);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.25rem;
+}
+
+.testimonial-card p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--color-dark);
+  margin-bottom: 1.25rem;
+  font-style: italic;
+}
+
+.testimonial-author {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.testimonial-author strong {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--color-primary);
+}
+
+.testimonial-author span {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  .testimonial-card {
+    flex: 0 0 280px;
+    padding: 1.5rem;
+  }
+}
+
+/* Testimonials Full Grid */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.testimonial-full-card {
+  background: var(--color-white);
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-full-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-full-card .testimonial-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  object-fit: cover;
+  border: 3px solid var(--color-accent);
+}
+
+.testimonial-full-card .testimonial-stars {
+  color: var(--color-accent);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.25rem;
+}
+
+.testimonial-full-card p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--color-dark);
+  margin-bottom: 1.25rem;
+  font-style: italic;
+}
+
+.testimonial-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+}
+
+.testimonial-meta strong {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--color-primary);
+}
+
+.testimonial-meta span {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.testimonial-meta small {
+  font-size: 0.8rem;
+  color: #999;
+  margin-top: 0.25rem;
 }
 
 /* Tour Cards */
